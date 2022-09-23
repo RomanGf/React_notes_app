@@ -1,6 +1,7 @@
 import { Actions } from "../actions/noteActions";
 import { ActionTypes } from "../actionTypes";
 import { Note } from "../../models/note.model";
+import { getInitialNote } from "../../utils/initialStateUtils";
 
 export interface NoteState {
   notes: Note[];
@@ -10,7 +11,7 @@ export interface NoteState {
 }
 
 const initialState: NoteState = {
-  notes: [] as Note[],
+  notes: getInitialNote() as Note[],
   archiveMode: false,
   showModal: false,
   editingNote: null,

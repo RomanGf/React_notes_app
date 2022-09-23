@@ -5,7 +5,6 @@ import noteActions from "../redux/actions/noteActions";
 import { Note } from "../models/note.model";
 import { getConcatenatedDatesFromString } from "../utils/dateUtils";
 
-
 const Modal = ({ note }: { note: Note | null }) => {
   const showHideClassName = note ? "modal display-block" : "modal display-none";
 

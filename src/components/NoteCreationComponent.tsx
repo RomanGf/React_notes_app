@@ -4,7 +4,6 @@ import noteActions from "../redux/actions/noteActions";
 import "./NoteCreationComponent.style.css";
 import { getConcatenatedDatesFromString } from "../utils/dateUtils";
 
-
 const InputSection = () => {
   const dispatch = useDispatch();
 
@@ -20,10 +19,10 @@ const InputSection = () => {
           id: Math.random(),
           title,
           content,
+          category,
           date_created: new Date().toLocaleDateString(),
           dates: getConcatenatedDatesFromString(content),
           archived,
-          category,
         })
       );
     }

@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import notes, { NoteState } from "./notes";
+import notes from "./notes";
 
 export default combineReducers({
   notes,
