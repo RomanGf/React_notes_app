@@ -31,8 +31,8 @@ export const Modal = ({ note }: { note: Note | null }) => {
 
   return (
     <div className={showHideClassName}>
-      <div className="modal">
-        <div className="modal__content">
+      <div className="modal fixed">
+        <div className="modal__content absolute">
           <label className="modal__close-icon">
             <i
               className="fa-solid fa-circle-xmark"
@@ -41,7 +41,8 @@ export const Modal = ({ note }: { note: Note | null }) => {
           </label>
           <div>
             <input
-              id="note_new_title"
+              className="min-w-400 w-full rounded-md border-solid
+                         border-2 border-gray-500 p-2 m-2 text-xs"
               type="text"
               placeholder="Note title"
               onChange={(e) => setTitle(e.target.value)}
@@ -49,6 +50,8 @@ export const Modal = ({ note }: { note: Note | null }) => {
           </div>
           <div>
             <input
+              className="min-w-400 w-full rounded-md border-solid
+                         border-2 border-gray-500 p-2 m-2 text-xs"
               type="text"
               id="note_new_desc"
               placeholder="Note content"
@@ -57,7 +60,8 @@ export const Modal = ({ note }: { note: Note | null }) => {
           </div>
           <div>
             <select
-              id="note__category"
+              className="w-full p-2 m-2 text-xs rounded-md 
+                         border-solid border-2 border-gray-500"
               value={category}
               onChange={(e) => {
                 setCategory(e.target.value);
@@ -69,7 +73,7 @@ export const Modal = ({ note }: { note: Note | null }) => {
             </select>
           </div>
           <button
-            className="btn"
+            className="btn p-2 rounded-md text-white "
             id="update_btn"
             onClick={() => updateAndClose()}
           >

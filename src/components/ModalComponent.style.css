@@ -14,7 +14,6 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   transition: 1s;
-  position: absolute;
 }
 
 .modal__window {
@@ -32,7 +31,6 @@
 .modal__content {
   width: 50%;
   background: rgb(255, 255, 255);
-  position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -53,35 +51,10 @@
   font-size: 20px;
 }
 
-#note_new_title {
-  width: 100%;
-  font-size: 15px;
-  margin-bottom: 10px;
-  padding: 4pt;
-}
-
-#note_new_desc {
-  width: 100%;
-  font-size: 15px;
-  margin-bottom: 10px;
-  padding: 4pt;
-}
-
-#note__category_edit {
-  width: 100%;
-  font-size: 10px;
-}
-
-
-
 .btn {
   background-color: rgb(73, 71, 71);
-  color: white;
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
   transition: all 0.2s;
-  padding: 0.3rem;
-  border-radius: 0.2rem;
-  padding: 5pt;
 }

@@ -1,9 +1,5 @@
 .NoteItem__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   padding: 0.4rem 0px;
-  border-radius: 4px;
   font-weight: bold;
   margin-bottom: 0.3rem;
   align-items: center;
@@ -11,27 +7,18 @@
 
 .notes__header-row {
   background: rgb(73, 71, 71);
-  display: flex;
-  justify-content: space-around;
   padding: 0.4rem 0px;
   overflow: hidden;
   border-radius: 4px;
-  font-weight: bold;
   margin-bottom: 0.5rem;
-  width: 100%;
 }
 
 .notes__row {
-  display: flex;
-  justify-content: space-around;
   padding: 0.4rem 0px;
   overflow: hidden;
-  border-radius: 4px;
   font-weight: bold;
   border: 1px solid black;
   margin-bottom: 0.3rem;
-  align-items: center;
-  width: 100%;
 }
 
 .notes__header-item {
@@ -43,7 +30,4 @@
   width: 17%;
   width: 100%;
 }
-.flex {
-  display: flex;
-  justify-content: space-around;
-}
+

@@ -17,14 +17,14 @@ const NoteDashboard = () => {
 
   if (notes.length === 0) {
     return (
-      <div className="NotesSection__container__empty">
+      <div className="flex items-center justify-center">
         <p>There is no note yet. Please add one.</p>
       </div>
     );
   }
 
   return (
-    <div className="NotesSection__container">
+    <div className="NotesSection__container w-4/5">
       <NoteList
         notes={notes.filter((x) => x.archived === archiveMode)}
       />

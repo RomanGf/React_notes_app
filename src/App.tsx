@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <Provider store={store}>
-      <div className="container">
+      <div className="container flex flex-col">
         <h1>My Notes</h1>
         <InputSection />
         <div className="line"></div>
