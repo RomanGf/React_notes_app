@@ -4,7 +4,7 @@ import noteActions from "../redux/actions/noteActions";
 import "./NoteCreationComponent.style.css";
 import { getConcatenatedDatesFromString } from "../utils/dateUtils";
 
-const InputSection = () => {
+export const InputSection = () => {
   const dispatch = useDispatch();
 
   const [title, setTitle] = useState("");
@@ -34,12 +34,14 @@ const InputSection = () => {
   return (
     <div className="InputSection__container">
       <input
+        className="note__creation-title"
         type="text"
         placeholder="Note title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <textarea
+        className="note__creation-content"
         value={content}
         placeholder="Note content"
         onChange={(e) => setContent(e.target.value)}

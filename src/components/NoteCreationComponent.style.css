@@ -32,3 +32,11 @@
   margin: 0.5em;
   font-size: 10pt;
 }
+
+.note__creation-title, .note__creation-content {
+  width: 100%;
+}
+
+/* .note__creation-content {
+  width: 100%;
+} */

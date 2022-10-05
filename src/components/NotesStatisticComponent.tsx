@@ -2,7 +2,7 @@ import React from "react";
 import "./NotesStatisticComponent.style.css";
 import { Note } from "../models/note.model";
 
-const NotesStatistic = ({ notes }: { notes: Note[] }) => {
+export const NotesStatistic = ({ notes }: { notes: Note[] }) => {
   const categories: { [key: string]: Note[] } = {
     Idea: [],
     Task: [],

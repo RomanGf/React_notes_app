@@ -27,7 +27,6 @@ const NoteDashboard = () => {
     <div className="NotesSection__container">
       <NoteList
         notes={notes.filter((x) => x.archived === archiveMode)}
-        archiveMode={archiveMode}
       />
       <Modal note={editingNote} />
       <NotesStatistic notes={notes} />

@@ -4,12 +4,10 @@ import { useDispatch } from "react-redux";
 import noteActions from "../redux/actions/noteActions";
 import { Note } from "../models/note.model";
 
-const NoteList = ({
+export const NoteList = ({
   notes,
-  archiveMode,
 }: {
   notes: Note[];
-  archiveMode: boolean;
 }) => {
   const dispatch = useDispatch();
 
