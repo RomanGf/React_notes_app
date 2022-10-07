@@ -38,9 +38,9 @@
 }
 
 .container {
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 .line {
   width: 100%;

@@ -2,7 +2,7 @@ import React from "react";
 import "./NotesStatisticComponent.style.css";
 import { Note } from "../models/note.model";
 
-const NotesStatistic = ({ notes }: { notes: Note[] }) => {
+export const NotesStatistic = ({ notes }: { notes: Note[] }) => {
   const categories: { [key: string]: Note[] } = {
     Idea: [],
     Task: [],
@@ -19,7 +19,7 @@ const NotesStatistic = ({ notes }: { notes: Note[] }) => {
 
   return (
     <div>
-      <div className="notes__header-row">
+      <div className="notes__header-row flex justify-around rounded py-2">
         <div className="notes__category-item f-grow">Note Category</div>
         <div className="notes__category-item">Active</div>
         <div className="notes__category-item f-grow">Archived</div>
@@ -28,7 +28,7 @@ const NotesStatistic = ({ notes }: { notes: Note[] }) => {
         return values.length === 0 ? (
           ""
         ) : (
-          <div className="notes__row" key={key}>
+          <div className="notes__row flex justify-around rounded py-2" key={key}>
             <p className="notes__header-item">{key}</p>
             <p className="notes__header-item">
               {values.filter((x: Note) => !x.archived).length}
